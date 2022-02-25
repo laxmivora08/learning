@@ -1,0 +1,27 @@
+{"data":{"id":16,"type":"actitrak","meta":{"t":"\"2021-2-3T22:52:10Z\"","l":"178d0da4-a5b6-416d-8fdc-64d11304b24d","e":"actisen","ei":"03c78b6b-36d7-4358-afeb-0baca1e13765","ps":"activity"},"attributes":{"t":"\"2021-2-3T22:52:10Z\"","w":7200,"a":0,"s":7200,"m":0,"v":825,"r":192,"o":0,"d":0}},"meta":{"version":1,"statusCode":200}}
+
+
+
+
+
+
+
+    array_json=[]
+    array_json.append(res_bytes) #sappend json to array
+    x=json.dumps(array_json)
+    print(type(array_json))
+    array = bytearray(array_json)
+    print(type(array))
+    return array
+
+def time():
+    dt=datetime.now()
+    dt_string = dt.strftime("%d-%m-%YT%H:%M:%S")
+    dt_string="/"+(dt_string)
+    dt_string=dt_string+"Z/"
+    #print(dt_string)
+    return dt_string
+def request(l3_uuid,request_url,array_json):
+    arr = bytes(array_json,'utf-8')
+    #str1 = ''.join(array_json)
+    compressed = zlib.compress(arr)

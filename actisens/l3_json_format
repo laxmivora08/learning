@@ -1,0 +1,37 @@
+{ "data": {
+    "type": "actitrak",  // product type
+    "meta" : {
+      "t": "2021-02-17T13:59:19Z",    // generate-time
+      "l": "12.12224,77.90137",       // GPS Coordinates of l3
+      "e": "Gateway",                 // Gateway/L3
+      "ei": "178d0da4-a5b6-416d-8fdc-64d11304b24d",     // L3-uuid
+      "ps": "GwInfo"
+    },
+    "attributes": {
+      "sysInfo": {
+        "fv" : "3.2",                        // firmware version
+        "ip" : "fd00:8000::618:1",           // ppp0 ipv6
+        "ut" : "10:32",                      // L3-uptime
+        "sp" : "Airtel",                     // Service provider
+        "sn" : "89914509009594485958",                 // Sim no.
+	"ci":{"mcc":"404","mnc":"45","lac":"21F2","cid":"C34FF71"}
+      },
+      "events" : [{"t": "2020-03-25T13:59:19Z", "sq" : "20", "bv" : "4.0"},
+                  {"t": "2020-03-25T15:59:19Z", "sq" : "20", "bv" : "4.1"},
+                  {"t": "2020-03-25T17:59:19Z", "sq" : "19", "bv" : "4.2"}] // eventtime, Siqnal-Q, Batt-Volt
+
+      "devicesInfo":{
+        "dc" : "3",                         // number of devices connected
+        "di" : [{"uuid":"18309e6e-cad4-46f1-b68e-553d75f105ff" ,"ip":"fd00:8000::123:3"},
+                {"uuid":"b632d77e-9d4f-4396-852f-2fbe2e1a1190","ip":"fd00:8000::123:2"},
+		{"uuid":"076d5c90-669e-4e0f-885f-ca4f14895204","ip":"fd00:8000::123:1"}
+
+]
+      }
+    }    
+  },
+ "meta": {
+    "version": "0.1",
+    "statusCode" : 200  
+  }
+}

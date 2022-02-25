@@ -1,0 +1,32 @@
+Create an array of n number json packets and create a gzip of the same and post data.
+The length in this case would be the number of packets are send to cloud.
+
+{"data":{
+    "id":170,
+    "type":"actitrak",
+    "meta":{
+        "t":"\"2021-2-3T22:52:10Z\"",
+        "l":"178d0da4-a5b6-416d-8fdc-64d11304b24d",
+        "e":"actisen",
+        "ei":"03c78b6b-36d7-4358-afeb-0baca1e13765",
+        "ps":"activity"
+     },
+     "attributes":{
+        "t":"\"2021-2-9T15:52:10Z\"", "/10-02-2021T00:40:32/Z"
+        "w":7200,
+        "a":0,
+        "s":7200,
+        "m":0,
+        "v":825,
+        "r":192,
+        "o":0,
+        "d":0
+     }
+   },
+"meta":{
+    "version":1,
+    "statusCode":200
+  }
+}
+
+
